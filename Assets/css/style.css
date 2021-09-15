@@ -743,6 +743,11 @@ header{
     align-items: center;
 }
 
+.featurebt{
+    display: flex;
+    justify-content: center;
+}
+
 .section-premium-area .pointer{
     width: 15px;
     height: 15px;
