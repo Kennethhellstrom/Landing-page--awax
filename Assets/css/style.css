@@ -1,4 +1,9 @@
 /* header*/
+@keyframes animslide {
+    0% {margin-left: 0%;}
+    50% {margin-left: -101.25%;}
+    100% {margin-left: -202.62%;}
+}
 
 *{
     margin: 0px;
@@ -90,6 +95,9 @@ header{
 .banner .sliders{
     width: 1000vw;
     height: 100%;
+    animation-name: animslide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .banner .slide{
@@ -152,7 +160,9 @@ header{
     align-items: center;
 }
 
-.banner .pointer{
+.banner .pointer1,
+.pointer2,
+.pointer3{
     width: 15px;
     height: 15px;
     border: 2px solid #B28756;
@@ -160,6 +170,11 @@ header{
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
+    
+}
+
+.on{
+    background-color: #fff;
 }
 
 
